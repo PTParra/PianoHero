@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Hero</title>
+    <script src="scripts/canciones.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pianoHero.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            
+            <div class="col-6" id="pianoHero">
+                <div id="panelPuntuacion">
+                    <p>Puntuacion: <span id="puntuacion"></span></p>
+                    <p>Multiplicador: <span id="multiplicador"></span></p>
+                    <p>Racha: <span id="racha"></span></p>
+                </div>
+                <canvas id="canvas" height="500px" width="600px"></canvas>
+            </div>
+
+            <div class="col-6" id="panelLateral">
+                <p>Dificultad de la cancion: <span id="dificultadElegida"></span></p>
+                <div id="dificultades">
+                    <button onclick="elegirCancion(document.getElementById('facil').value)" id="facil" value="cancionFacil">Facil</button>
+                    <button onclick="elegirCancion(document.getElementById('normal').value)" id="normal" value="cancionMedia">Media</button>
+                    <button onclick="elegirCancion(document.getElementById('dificil').value)" id="dificil" value="cancionDificil">Dificil</button>
+                </div>
+                <button onclick="iniciarJuego()" id="comenzar">Pulsa para comenzar</button>
+                <button onclick="mostrarRecords()" id="mostrarRecords">Ver Record</button>
+                <br>
+                <button id="cambioNombre" hidden onclick="cambiarNombre()">Cambiar Nombre</button>
+                <div id="zonaIntroducirNombre">
+                    <br>
+                    <label for="nombre">Introduce tu nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <button onclick="recogerNombre()">Introducir</button>
+                </div>
+
+                <div id="record">
+                            
+                </div>
+                <div id="instrucciones">
+                    <h1>Instrucciones:</h1>
+                    <p><strong>Tecla verde:</strong> S</p>
+                    <p><strong>Tecla roja:</strong> D</p>
+                    <p><strong>Tecla amarilla:</strong> G</p>
+                    <p><strong>Tecla azul:</strong> H</p>
+                    <p><strong>Tecla naranja:</strong> J</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    <p>Hecho por Patricio Tristante Parra, 2º DAW</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

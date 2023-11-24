@@ -1,0 +1,36 @@
+:root{
+    --base: 1260;
+    --tbase: calc((var(--base)) * 1px);
+    --tcolumna: calc((var(--base)) / 12);
+    --pcolumna: calc(var(--tcolumna)/ var(--base) * 100%);
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: var(--tbase);
+    margin: 0 auto;
+}
+
+.row{
+    clear: both;
+}
+
+.col-6{
+    width: calc(var(--pcolumna) * 6);
+    float: left;
+}
+
+.col-12{
+    width: calc(var(--pcolumna) * 12);
+    float: left;
+    border: 6px solid rgb(226, 60, 60);
+    background-color: rgb(206, 20, 107);
+    font-size: 25px;
+    font-weight: bold;
+}

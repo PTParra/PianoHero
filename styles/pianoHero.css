@@ -1,0 +1,24 @@
+#pianoHero{
+    background-color: black;
+    color: white;
+    border: 4px solid;
+    border-color: green;
+    height: 700px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#canvas{
+    background-color: grey;
+    margin-left: 10px;
+}
+button{
+    margin-bottom: 5px;
+}
+
+#panelLateral{
+    padding-left: 20px;
+}
+
+#instrucciones p{
+    font-size: 20px;
+}
